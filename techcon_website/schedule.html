@@ -1,10 +1,9 @@
-<!-- Create the Schedule page (schedule.html) for TechCon 2024, providing a detailed and accessible timetable of events, sessions, and speakers, using a structured HTML table format. -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schedule Page</title>
+    <title>Schedule for TechCon 2024</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -25,12 +24,17 @@
         display: inline;
         margin-right: 1rem;
       }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
       main {
         padding: 2rem;
       }
-
       table {
+        width: 100%;
         border-collapse: collapse;
+        margin-top: 2rem;
       }
       th,
       td {
@@ -43,13 +47,16 @@
       }
       caption {
         font-weight: bold;
-        margin-top: 1rem;
+        margin-bottom: 1rem;
       }
       footer {
         background-color: #333;
         color: #fff;
         text-align: center;
         padding: 1rem 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
       }
     </style>
   </head>
@@ -71,9 +78,11 @@
           Detailed Schedule of Events for TechCon 2024
         </caption>
         <thead>
-          <th scope="col">Time</th>
-          <th scope="col">Session</th>
-          <th scope="col">Speaker</th>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Session</th>
+            <th scope="col">Speaker</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
